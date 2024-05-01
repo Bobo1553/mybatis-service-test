@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: ojdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: root
+    password: test
+  sql:
+    init:
+      schema-locations: classpath:db/schema-h2.sql
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
